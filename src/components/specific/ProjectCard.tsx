@@ -13,10 +13,10 @@ function ProjectCard(props: { project: Project; }) {
             onClick={() => setOpen(true)}
         >
             <img
-                className="object-cover h-full z-0 absolute w-full md:h-50 xl:h-65"
+                className="object-cover h-full z-0 absolute w-full"
                 src={String(project.thumbnail)}
             />
-            <div className="z-20 flex flex-col h-full items-center justify-end py-8 px-6 w-full">
+            <div className="z-20 flex flex-col h-full items-center justify-end py-8 px-6 w-full bg-gradient-to-t from-background to-transparent">
                 <p className="font-bold text-white text-lg">{project.name}</p>
                 <p>{
                     project.tech.map((techName: string, index: Key | null | undefined) => {
