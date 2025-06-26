@@ -36,7 +36,7 @@ export const GlareCard = ({
         "--duration": "300ms",
         "--foil-size": "100%",
         "--opacity": "0",
-        "--radius": "48px",
+        "--radius": "24px",
         "--easing": "ease",
         "--transition": "var(--duration) var(--easing)",
     } as any;
