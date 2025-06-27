@@ -29,7 +29,7 @@ function ProjectDialog(
                 overflow-y-scroll
             ">
                 <DialogHeader className="h-[16px]"></DialogHeader>
-                <div className="p-5 md:p-10">
+                <div className="md:p-10">
                     <DialogClose asChild>
                         <Button type="button" variant="outline" className="w-full md:w-[128px]">
                             Back
