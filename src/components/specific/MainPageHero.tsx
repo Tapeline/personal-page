@@ -25,13 +25,24 @@ function MainPageHero() {
                 <p className="mt-5 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
                     an aspiring backend (a bit fullstack) developer and software engineer
                 </p>
+                <div className="
+                    mt-5 font-normal text-base text-neutral-300 max-w-lg
+                    text-center mx-auto font-thin flex justify-center gap-5
+                ">
+                    <a href="https://github.com/Tapeline" className="hover:underline">
+                        GitHub
+                    </a>
+                    •
+                    <a href="mailto:mail@tapeline.dev" className="hover:underline">
+                        mail@tapeline.dev
+                    </a>
+                    •
+                    <a href="mailto:mail@tapeline.dev" className="hover:underline">
+                        Habr
+                    </a>
+                </div>
                 <p className="mt-5 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto font-thin">
-                    <a href="https://github.com/Tapeline" className="hover:underline">GitHub</a>
-                    <br/>
-                    <a href="mailto:mail@tapeline.dev" className="hover:underline">mail@tapeline.dev</a>
-                </p>
-                <p className="mt-5 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto font-thin">
-                    <Button asChild>
+                <Button asChild>
                         <a href="#projects">See my projects</a>
                     </Button>
                 </p>
