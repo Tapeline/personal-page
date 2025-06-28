@@ -47,8 +47,8 @@ function ProjectDialog(
                                 <div>
                                     <h1 className="text-5xl font-bold mt-4 mb-4">{project.name}</h1>
                                     <p className="mb-4 text-lg">{project.annotation}</p>
-                                    <hr className="hidden md:visible"/>
-                                    <p className="mt-8 text-lg hidden md:visible">{project.description}</p>
+                                    <hr className="hidden md:block"/>
+                                    <p className="mt-8 text-lg hidden md:block">{project.description}</p>
                                 </div>
                             </CardContent>
                         </Card>
