@@ -37,7 +37,7 @@ function MainPageHero() {
                         mail@tapeline.dev
                     </a>
                     •
-                    <a href="mailto:mail@tapeline.dev" className="hover:underline">
+                    <a href="https://habr.com/ru/users/tapeline" className="hover:underline">
                         Habr
                     </a>
                 </div>
