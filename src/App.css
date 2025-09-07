@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wdth,wght,GRAD@0,8..144,50..150,100..900,-50..100;1,8..144,50..150,100..900,-50..100&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+.t-navbar {
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.t-font-serif {
+    font-family: "Roboto Serif", serif;
+}
+
+.t-font-sans {
+    font-family: "Roboto", sans-serif;
+}
+
+.t-font-cond {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.t-year-divider > hr {
+    border-top: 1px solid black;
+}
+
+.t-project-thumb {
+    cursor: pointer;
+    /*min-width: 40%;*/
+    /*width: 40%;*/
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+        &::after {
+            opacity: 0.2;
+        }
+    }
+    img {
+        transition: .5s ease all;
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        border: 1px solid black;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #e5e5e5;
+        opacity: 0;
+        transition: .5s ease all;
+    }
+}
+
+div[role=dialog] {
+    border-radius: 0;
+}
+
+.t-skill-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.t-skill-icon {
+    img {
+        width: auto;
+        height: 48px;
+    }
 }

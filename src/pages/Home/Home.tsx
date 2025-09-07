@@ -1,41 +1,48 @@
-import MainPageHero from "@/components/specific/MainPageHero.tsx";
-import {projectList} from "@/data/projectsConf.ts";
-import ProjectCard from "@/components/specific/ProjectCard.tsx";
-import {Project} from "@/data/projectClasses.ts";
+import Navbar from "@/components/Navbar.tsx";
+import {Typewriter} from "@/components/ui/typewriter.tsx";
 
 function Home() {
-    return (<div>
-        <MainPageHero/>
-        <div className="w-full h-full bg-black/[0.96] antialiased" id="projects">
-            <div
-                style={{
-                    backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`,
-                }}
-                className="p-5 sm:p-5 sm:px-5 md:px-[8%] xl:px-[16%]"
-            >
-                <h1 className="text-4xl font-bold mb-3">My projects</h1>
-                {
-                    projectList.map((data, index) => {
-                        return <div key={index} className="mb-5">
-                            <hr/>
-                            <h2 className="text-2xl font-semibold mb-3">{data.year}</h2>
-                            <div className="
-                            grid gap-10
-                            grid-cols-1
-                            md:grid-cols-2
-                            xl:grid-cols-3
-                            "
-                            >{
-                                data.projects.map((project: Project, index) => {
-                                    return <ProjectCard project={project} key={index}/>;
-                                })
-                            }</div>
-                        </div>;
-                    })
-                }
+    return (<div className="min-h-dvh w-full px-5 md:px-[25%] flex flex-col items-center">
+        <Navbar/>
+        <div className="
+            w-full h-full grow flex flex-col
+            items-center justify-center mb-25
+            gap-3
+        ">
+            <span className="block text-6xl t-font-serif">Hello,</span>
+            <span className="block text-5xl t-font-serif">
+                I'm&nbsp;
+                <Typewriter
+                    text={[
+                        "Tapeline",
+                        "Ilya"
+                    ]}
+                    speed={70}
+                    waitTime={1500}
+                    deleteSpeed={40}
+                    cursorChar={"|"}
+                />
+            </span>
+            <span className="block text-md t-font-sans">
+                an aspiring backend (a bit fullstack) developer and software engineer
+            </span>
+            <div className="
+                text-base max-w-lg t-font-cond
+                text-center mx-auto font-light flex justify-center gap-5
+            ">
+                <a href="https://github.com/Tapeline" className="hover:underline">
+                    GitHub
+                </a>
+                •
+                <a href="mailto:mail@tapeline.dev" className="hover:underline">
+                    mail@tapeline.dev
+                </a>
+                •
+                <a href="mailto:mail@tapeline.dev" className="hover:underline">
+                    Habr
+                </a>
             </div>
         </div>
-
     </div>);
 }
 

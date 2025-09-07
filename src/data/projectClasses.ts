@@ -47,3 +47,33 @@ export class Project {
         }
     }
 }
+
+export class Article {
+    name: string;
+    annotation: string;
+    thumbnail: any;
+    link: string;
+    constructor(
+        name: string,
+        annotation: string,
+        thumbnail: any,
+        link: string
+    ) {
+        this.name = name;
+        this.annotation = annotation;
+        this.thumbnail = thumbnail;
+        this.link = link;
+    }
+}
+
+
+export class Skill {
+    name: string;
+    pic: string;
+    link: string;
+    constructor(name: string, pic: string, link: string) {
+        this.name = name;
+        this.pic = pic;
+        this.link = link;
+    }
+}
