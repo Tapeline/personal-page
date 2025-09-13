@@ -65,6 +65,7 @@ div[role=dialog] {
 .t-skill-icons {
     display: flex;
     gap: 1rem;
+    flex-flow: wrap;
 }
 
 .t-skill-icon {

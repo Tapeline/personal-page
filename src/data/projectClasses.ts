@@ -67,7 +67,7 @@ export class Article {
 }
 
 
-export class Skill {
+export class Tech {
     name: string;
     pic: string;
     link: string;

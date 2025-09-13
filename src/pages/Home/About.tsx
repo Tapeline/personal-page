@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar.tsx";
 import Footer from "@/components/Footer.tsx";
-import {skillList} from "@/data/skillsConf.ts";
 import {Tooltip, TooltipContent, TooltipTrigger} from "@/components/ui/tooltip.tsx";
 import MiniYearDivider from "@/components/MiniYearDivider.tsx";
+import {techList} from "@/data/techConf.ts";
 
 export default function About() {
     return (<div className="min-h-dvh w-full px-5 md:px-[15%] xl:px-[25%] flex flex-col items-center">
@@ -17,7 +17,7 @@ export default function About() {
         </div>
         <div className="w-full">
             <div className="flex items-center gap-3 t-year-divider">
-                <h2 className="t-font-cond text-2xl">Skills</h2>
+                <h2 className="t-font-cond text-2xl">Technologies</h2>
                 <hr className="grow"/>
             </div>
             <span className="t-font-cond font-light text-sm">(hover the icon to see the name)</span>
@@ -25,7 +25,7 @@ export default function About() {
         <div className="w-full">
             <p className="t-font-sans my-3">Tech I know / use often:</p>
             <div className="t-skill-icons">{
-                skillList.map((skill, key) => {
+                techList.map((skill, key) => {
                     return <div className="t-skill-icon" key={key}>
                         <Tooltip>
                             <TooltipTrigger>
