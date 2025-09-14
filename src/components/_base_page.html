@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tapeline.dev</title>
+<!--  <link-->
+<!--    rel="stylesheet"-->
+<!--    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+<!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"></script>
+<!--  <script-->
+<!--    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">-->
+<!--  </script>-->
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <main>
+    {% include "components/_navbar.html" %}
+    {% block content %}{% endblock %}
+    {% block footer %}{% include "components/_footer.html" %}{% endblock %}
+  </main>
+</body>
+{% block extra_js %}{% endblock %}
+</html>

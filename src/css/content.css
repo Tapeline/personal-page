@@ -1,0 +1,146 @@
+.t-hero {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6.25rem;
+    gap: 0.75rem;
+    text-align: center;
+
+    > span {
+        display: block;
+    }
+
+    .t-hero-links {
+        margin-top: 0.35rem;
+        text-align: center;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+.t-hero-mini {
+    height: 50dvh;
+    margin-bottom: 0;
+    flex-grow: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.t-year-divider > hr {
+    border-top: 1px solid black;
+}
+
+.t-skill-icons {
+    display: flex;
+    gap: 1rem;
+    flex-flow: wrap;
+}
+
+.t-skill-icon {
+    img {
+        width: auto;
+        height: 48px;
+    }
+}
+
+hr {
+    height: 0;
+    border-top: 1px solid black;
+}
+
+.t-full-divider {
+    width: 100%;
+    display: flex;
+    hr {
+        flex-grow: 1;
+    }
+    gap: 1rem;
+    span {
+        font-size: 1.5rem;
+    }
+    align-items: center;
+}
+
+.t-mini-divider {
+    width: 100%;
+    display: flex;
+    hr {
+        width: 64px;
+        margin: 0;
+    }
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    span {
+        font-size: 1.5rem;
+    }
+}
+
+.t-reverse-divider {
+    flex-direction: row-reverse;
+}
+
+.t-paragraph {
+    margin-bottom: 1.25rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.t-interest-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 1.25rem;
+    @media screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.t-mini-gallery {
+    .t-project-thumb:not(.zoomed-media) {
+        width: 31% !important;
+    }
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    gap: 8px;
+    width: 100%;
+}
+
+.t-project-tech {
+    display: flex;
+    gap: 8px;
+    flex-flow: wrap;
+    span {
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 4px;
+    }
+}
+
+.t-project-time {
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.t-project-links {
+    display: flex;
+    gap: 1rem;
+    flex-flow: wrap;
+}

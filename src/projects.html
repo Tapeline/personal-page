@@ -1,0 +1,66 @@
+{% extends "components/_base_page.html" %}
+{% import "components/_dividers.html" as divs %}
+{% import "data/_project_conf.jinja" as conf %}
+
+{% block content %}
+<div class="t-hero t-hero-mini">
+  <span style="font-size: 3.75rem;" class="t-font-serif">
+    Projects
+  </span>
+  <span style="font-size: 1rem;" class="t-font-sans">
+    Here you can explore my public projects that I’ve worked on in different periods.
+  </span>
+</div>
+{% for year in conf.project_list %}
+<div class="t-paragraph">
+  {{ divs.year_divider(year.year) }}
+  {% for project in year.projects %}
+  <div class="t-interest-card">
+    <div>
+      <p
+        class="t-font-serif"
+        style="font-size: 2rem; line-height: 2.2rem; margin: 0"
+      >
+        {{project.name}}
+      </p>
+      <p class="t-font-sans">{{project.annotation}}</p>
+      <p class="t-font-cond t-project-tech">
+        {% for tech in project.tech %}
+        <span>{{tech}}</span>
+        {% endfor %}
+      </p>
+      <p class="t-font-serif t-collapsible">
+        <span
+          class="t-collapsible-trigger"
+          data-collapsible="collapse-{{project.name}}"
+        >
+          Learn more <span style="font-size: 1.5rem; vertical-align: bottom">+</span>
+        </span>
+        <span class="t-collapsible-content" id="collapse-{{project.name}}">
+          <span class="t-project-time">{{project.start}} - {{project.end}}</span>
+          {{project.description}}
+        </span>
+      </p>
+      <div class="t-project-links">
+        {% for link in project.links %}
+        <a href="{{link[1]}}" class="t-font-cond" style="font-weight: 300">{{link[0]}}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="t-project-thumb-container">
+      <div class="t-project-thumb zoom-on-click">
+        <img src="{{project.thumbnail}}"/>
+      </div>
+      <div class="t-mini-gallery">
+        {% for image in project.screenshots %}
+        <div class="t-project-thumb zoom-on-click">
+          <img src="{{image}}"/>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,10 @@
+[project]
+name = "tapeline-personal-page"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "rust-just>=1.42.4",
+    "staticjinja>=5.0.0",
+]

@@ -1,0 +1,302 @@
+{% set project_list = [
+  {
+    "year": "2025",
+    "projects": [
+      {
+        "name": "This site",
+        "annotation": "The site you are currently browsing",
+        "tech": ["TS", "React", "Shadcn", "Vite"],
+        "start": "23 Apr'25",
+        "end": "current",
+        "links": [
+            ("Goto here", "https://tapeline.dev")
+        ],
+        "description": (
+          "This site was created as an exercise in TypeScript, React and shadcn/ui"
+        ),
+        "thumbnail": "img/projectScreenshots/thisSite/a.png",
+        "screenshots": []
+      },
+      {
+        "name": "Aisle",
+        "annotation": "Simple C4-like diagram-as-code tool",
+        "tech": ["Python", "PlantUML"],
+        "start": "22 Jan'25",
+        "end": "current",
+        "links": [
+          ("GitHub repo", "https://github.com/Tapeline/Aisle"),
+          ("Docs", "https://tapeline.github.com/Aisle")
+        ],
+        "description": (
+          "When I first stumbled upon necessity of creating an architecture
+            diagram in C4 style I found that there are not many (actually,
+            none) tools that allow easy creation of such diagrams using
+            a simple and understandable syntax. That's when I decided to create Aisle."
+        ),
+        "thumbnail": "img/projectScreenshots/aisle.png",
+        "screenshots": []
+      },
+      {
+        "name": "Kumir-Compose",
+        "annotation": "Toolchain for modern Kumir development",
+        "tech": ["Python"],
+        "start": "18 Mar'25",
+        "end": "current",
+        "links": [
+          ("GitHub repo", "https://github.com/kumir-compose/compose"),
+        ],
+        "description": (
+          "Another joke project."
+        ),
+        "thumbnail": "img/projectScreenshots/kumircomposeicon.png",
+        "screenshots": []
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "projects": [
+      {
+        "name": "Sdamgiabot",
+        "annotation": "A bot for exercising GIA EGE exams",
+        "tech": ["Python", "aiogram"],
+        "start": "19 Jul'24",
+        "end": "current",
+        "links": [
+            ("GitHub", "https://github.com/Tapeline/Sdamgiabot")
+        ],
+        "description": "I wanted a simple and free app that would send a daily task out of a
+        specific selection of EGE tasks that I can make and adjust.",
+        "thumbnail": "img/projectScreenshots/sdamgiabot1.png",
+        "screenshots": []
+      },
+      {
+        "name": "Taskstorm",
+        "annotation": "Collaborative task tracker",
+        "tech": ["Python", "Django", "DRF", "JS", "React", "Bootstrap 5", "Celery"],
+        "start": "1 May'24",
+        "end": "currently freezed",
+        "links": [
+            ("GitHub repo", "https://github.com/Tapeline/Taskstorm"),
+            ("Deployed", "https://taskstorm.tapeline.dev"),
+        ],
+        "description": "
+          This is a first my big web project featuring separate backend and frontend.
+          This application was built with no actual practical purpose only with
+          educational ones, so it may be
+          not very useful, although it features some interesting functions, e.g.:
+          collaborative document editor like Google Docs, notifications and Kanban-boards.
+        ",
+        "thumbnail": "img/projectScreenshots/taskstorm/task_list.png",
+        "screenshots": [
+          "img/projectScreenshots/taskstorm/task_detail.png",
+          "img/projectScreenshots/taskstorm/kanban.png",
+          "img/projectScreenshots/taskstorm/docs.png",
+          "img/projectScreenshots/taskstorm/profile.png",
+        ]
+      },
+      {
+        "name": "TJudgeUI",
+        "annotation": "Reskin for ejudge.algocourses.ru",
+        "tech": ["JS", "jQuery", "Manifest v3", "Materialize.css"],
+        "start": "1 Dec'24",
+        "end": "year 2025",
+        "links": [
+            ("GitHub repo", "https://github.com/Tapeline/TJudgeUI"),
+        ],
+        "description": "
+          The ejudge system is great, but its UI is very scary and ugly, so I created
+          this extension for Chrome that rebuilds each page with MaterializeCSS framework.
+        ",
+        "thumbnail": "img/projectScreenshots/tjudgeui1.png",
+        "screenshots": []
+      },
+      {
+        "name": "goylang",
+        "annotation": "Joke programming language implemented in Kumir",
+        "tech": ["Kumir"],
+        "start": "15 Dec'24",
+        "end": "15 Dec'24",
+        "links": [
+            ("GitHub repo", "https://github.com/Tapeline/goylang"),
+            ("Habr (ru)", "https://habr.com/ru/articles/872680/"),
+        ],
+        "description": "
+          Just a joke programming language implemented in russian educational-purpose language
+          named Kumir. Think of it as a some kind of challenge.
+        ",
+        "thumbnail": "img/projectScreenshots/goylang1.png",
+        "screenshots": []
+      },
+      {
+        "name": "Instalinker",
+        "annotation": "Add portable software to Windows Start menu",
+        "tech": ["Python", "tkinter"],
+        "start": "22 Aug'24",
+        "end": "current",
+        "links": [
+            ("GitHub repo", "https://github.com/Tapeline/Instalinker"),
+        ],
+        "description": "
+          I got tired of opening over 9000 folders to access apps that are distributed
+          as portables and I wanted to access them via PowerToys Run searchbar.
+          This program just creates .lnk files in Start menu which makes them accessible
+          both from the PowerToys Run and Start menu itself.
+        ",
+        "thumbnail": "img/projectScreenshots/instalinker1.png",
+        "screenshots": []
+      },
+      {
+        "name": "Embark",
+        "annotation": "Automate setup of Windows workstations",
+        "tech": ["Python", "tkinter"],
+        "start": "5 Oct'24",
+        "end": "current",
+        "links": [
+            ("GitHub repo", "https://github.com/Tapeline/Embark"),
+            ("Website", "https://embark.tapeline.dev"),
+            ("Docs", "https://embark.tapeline.dev/docs/"),
+        ],
+        "description": "
+          Initially a private project for my school to automate preparation of
+          workstations for GIA exams, I decided to make it publicly open. <br/>
+          Embark is a solution for automatic workstation setup (installing software,
+          copying needed files, setting the environment, etc.)
+          It could be useful if such setup should be performed on many workstations,
+          eliminating manual actions and thus preventing many errors and reducing the
+          amount of work.
+        ",
+        "thumbnail": "img/projectScreenshots/embark_ui_main_en.png",
+        "screenshots": []
+      },
+      {
+        "name": "Dockingjudge",
+        "annotation": "On-premise PCMS",
+        "tech": ["Python", "Django", "DRF", "Litestar", "Faststream", "dishka", "JS", "React", "MUIv1"],
+        "start": "3 Aug'24",
+        "end": "current",
+        "links": [
+            ("GitHub repo", "https://github.com/Tapeline/Dockingjudge"),
+        ],
+        "description": "
+          As Taskstorm, it is more of an educational project than a practical one.
+          Initially planned as a project to try microservice architecture, it turned
+          to a polygon for various experiments. As a result, it combines incompatible
+          and many decisions are controversial and counterproductive in terms of
+          real production environment. Not as nearly as completed as Taskstorm:
+          it lacks tests, linters, etc. and also has many bugs. But all in all
+          it gave me a lot of experience with different tech and architectural
+          patterns.
+        ",
+        "thumbnail": "img/projectScreenshots/dockingjudge1.png",
+        "screenshots": []
+      },
+      {
+        "name": "Arraymagic",
+        "annotation": "Excel-like spreadsheet processor (abandoned)",
+        "tech": ["Java", "Swing"],
+        "start": "28 Apr'24",
+        "end": "Aug'24",
+        "links": [
+            ("GitHub repo", "https://github.com/Tapeline/Arraymagic"),
+        ],
+        "description": "
+          An attempt at creating a complex desktop application. Has many unresolved bugs
+          and unimplemented MVP features, idk why I'm sharing this project.
+        ",
+        "thumbnail": "img/projectScreenshots/arraymagic1.png",
+        "screenshots": []
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "projects": [
+      {
+        "name": "pyljudge",
+        "annotation": "Simplest PCMS",
+        "tech": ["Python", "Django"],
+        "start": "2 Dec'23",
+        "end": "May'24",
+        "links": [
+            ("GitHub", "https://github.com/Tapeline/pyljudge")
+        ],
+        "description": "A predecessor to Dockingjudge. Very bad design, no sandboxing,
+        no security. I don't want to give any more comments on that piece of sh*t xD",
+        "thumbnail": "img/projectScreenshots/noimg.png",
+        "screenshots": []
+      },
+      {
+        "name": "Quail 2.x",
+        "annotation": "Second generation of Quail programming language",
+        "tech": ["Java 8"],
+        "start": "25 Mar'23",
+        "end": "Apr'24",
+        "links": [
+            ("GitHub", "https://github.com/Quail-Language/quail"),
+            ("Website", "quail-language.github.io"),
+        ],
+        "description": "A second generation of my Quail programming language.
+        Done (again) entirely from scratch, with help from 'Crafting Interpreters' book.
+        Learn more at its website or at Quail 1.x project description",
+        "thumbnail": "img/projectScreenshots/quail.png",
+        "screenshots": []
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "projects": [
+      {
+        "name": "Hummingbird",
+        "annotation": "IDE written in Java Swing (abandoned)",
+        "tech": ["Java", "Swing"],
+        "start": "3 Sep'22",
+        "end": "Oct'23",
+        "links": [
+            ("GitHub", "https://github.com/Tapeline/Hummingbird-IDE"),
+        ],
+        "description": "A successor of quail::studio, my attempt at writing a full-blown IDE with plugin
+        system. It has reached some state of minimal functionality after which I decided
+        that it is too complicated for me at that moment and that I want to focus at other
+        project.",
+        "thumbnail": "img/projectScreenshots/hide1.png",
+        "screenshots": []
+      },
+      {
+        "name": "quail::studio",
+        "annotation": "IDE for Quail 1.x programming language",
+        "tech": ["Java", "Swing"],
+        "start": "Mar'22",
+        "end": "Jul'22",
+        "links": [
+            ("GitHub", "https://github.com/Tapeline/quail-studio"),
+        ],
+        "description": "My first attempt at writing an IDE. Works, but meh.",
+        "thumbnail": "img/projectScreenshots/noimg.png",
+        "screenshots": []
+      }
+    ]
+  },
+  {
+    "year": "2021",
+    "projects": [
+      {
+        "name": "Quail 1.x",
+        "annotation": "A programming language written in Java",
+        "tech": ["Java 8"],
+        "start": "31 Oct'21",
+        "end": "Oct'23",
+        "links": [
+            ("GitHub", "https://github.com/Tapeline/quail"),
+        ],
+        "description": "My first attempt at creating a complex project — a programming language.
+        As in each first attempt at anything it contains many bad design decisions,
+        but anyway it's worth looking at. Fun fact: the name evoluted as follows:
+        The Q project -> quark -> quail.",
+        "thumbnail": "img/projectScreenshots/quail.png",
+        "screenshots": []
+      }
+    ]
+  }
+] %}

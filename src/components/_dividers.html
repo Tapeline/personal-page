@@ -1,0 +1,24 @@
+{% macro full_divider(title) -%}
+<div class="t-full-divider">
+  <span class="t-font-cond">{{ title }}</span>
+  <hr/>
+</div>
+{%- endmacro %}
+
+
+{% macro year_divider(title) -%}
+<div class="t-full-divider t-reverse-divider">
+  <span class="t-font-cond">{{ title }}</span>
+  <hr/>
+</div>
+{%- endmacro %}
+
+
+
+{% macro mini_divider(title) -%}
+<div class="t-mini-divider">
+  <hr/>
+  <span class="t-font-cond">{{ title }}</span>
+  <hr/>
+</div>
+{%- endmacro %}

@@ -1,0 +1,36 @@
+{% extends "components/_base_page.html" %}
+{% import "components/_dividers.html" as divs %}
+{% import "data/_article_conf.jinja" as conf %}
+
+{% block content %}
+<div class="t-hero t-hero-mini">
+  <span style="font-size: 3.75rem;" class="t-font-serif">
+    Articles
+  </span>
+  <span style="font-size: 1rem;" class="t-font-sans">
+    Here you can explore my public articles on Habr and other resources.
+  </span>
+</div>
+{% for year in conf.article_list %}
+<div class="t-paragraph">
+  {{ divs.year_divider(year.year) }}
+  {% for article in year.articles %}
+  <div class="t-interest-card">
+    <div>
+      <p
+        class="t-font-serif"
+        style="font-size: 2rem; line-height: 2.2rem; margin: 0"
+      >
+        {{article[0]}}
+      </p>
+      <p class="t-font-sans">{{article[1]}}</p>
+      <a href="{{article[2]}}" class="t-font-cond" style="font-weight: 300">Read</a>
+    </div>
+    <div class="t-project-thumb">
+      <img src="{{article[3]}}"/>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
+{% endblock %}

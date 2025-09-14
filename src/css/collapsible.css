@@ -1,0 +1,18 @@
+.t-collapsible {
+    .t-collapsible-trigger {
+        display: block;
+        cursor: pointer;
+    }
+    .t-collapsible-content {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        transition: 300ms;
+    }
+    .t-collapsible-open {
+        margin-top: 0.75rem;
+        height: initial;
+        transition: 300ms;
+    }
+}

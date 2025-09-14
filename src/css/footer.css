@@ -1,0 +1,7 @@
+.t-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+}

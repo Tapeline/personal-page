@@ -1,0 +1,33 @@
+{% extends "components/_base_page.html" %}
+
+{% block content %}
+<div class="t-hero">
+  <span style="font-size: 3.75rem;" class="t-font-serif">Hello,</span>
+  <span style="font-size: 3rem;" class="t-font-serif">
+    I'm <span id="index-hero-typewriter"></span>
+  </span>
+  <span class="t-font-sans">
+    an aspiring backend (a bit fullstack) developer and software engineer
+  </span>
+  <div class="t-hero-links t-font-cond">
+    <a href="https://github.com/Tapeline">
+      GitHub
+    </a>
+    •
+    <a href="mailto:mail@tapeline.dev">
+      mail@tapeline.dev
+    </a>
+    •
+    <a href="mailto:mail@tapeline.dev">
+      Habr
+    </a>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="js/typewriter.js"></script>
+{% endblock %}
+
+{# no footer #}
+{% block footer %}{% endblock %}

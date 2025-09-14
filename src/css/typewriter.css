@@ -1,0 +1,14 @@
+#index-hero-typewriter {
+    border-right: 2px solid black; /* The cursor */
+    padding-right: 2px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}

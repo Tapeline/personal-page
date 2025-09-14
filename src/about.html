@@ -1,0 +1,48 @@
+{% extends "components/_base_page.html" %}
+{% import "components/_dividers.html" as divs %}
+{% import "data/_tech_conf.jinja" as conf %}
+
+{% block content %}
+<div class="t-hero t-hero-mini">
+  <span style="font-size: 3.75rem;" class="t-font-serif">
+    About me
+  </span>
+  <span style="font-size: 1rem;" class="t-font-sans">
+    Here you can learn more about me, what I can do and how I ended up where I am.
+  </span>
+</div>
+<div class="t-paragraph">
+  {{ divs.full_divider("Technologies") }}
+  <span class="t-font-cond" style="
+    font-weight: 300;
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+  ">
+    (hover the icon to see the name)
+  </span>
+  <p class="t-font-sans">Tech I know / use often:</p>
+  <div class="t-skill-icons">
+    {% for tech in conf.tech_list %}
+    <div class="t-skill-icon">
+      <a href="{{tech[2]}}" title="{{tech[0]}}"><img src="{{tech[1]}}"/></a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="t-font-sans">
+  {{ divs.full_divider("Biography") }}
+  <p>
+    When designing this site, it felt like a right thing to do,
+    to write a short (or maybe long) section on how I started my journey,
+    what problems I encountered, what did I do and what motivated me.
+  </p>
+  <p>
+    This paragraph is going to be a literal biography just lying there for
+    anyone wanting to learn more about me.
+  </p>
+  <p>Happy reading!</p>
+  {{ divs.mini_divider("2016") }}
+  <p>Coming up...</p>
+</div>
+{% endblock %}
