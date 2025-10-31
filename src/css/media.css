@@ -2,6 +2,8 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    border: 1px solid #888;
+    border-radius: 4px;
     z-index: 1;
     &:hover {
         img {
@@ -16,7 +18,6 @@
         width: 100%;
         object-fit: cover;
         aspect-ratio: 16/9;
-        border: 1px solid black;
     }
     &::after {
         content: '';
@@ -49,7 +50,7 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background: black;
+    background: rgba(0, 0, 0, .8);
     padding: 3rem;
     display: flex;
     justify-content: center;
