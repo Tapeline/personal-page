@@ -3,19 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>tapeline.dev</title>
-<!--  <link-->
-<!--    rel="stylesheet"-->
-<!--    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
-<!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-  <script
-    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-    crossorigin="anonymous"></script>
-<!--  <script-->
-<!--    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">-->
-<!--  </script>-->
-  <script src="js/script.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wdth,wght,GRAD@0,8..144,50..150,100..900,-50..100;1,8..144,50..150,100..900,-50..100&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+  </style>
+  <link rel="stylesheet" href="css/min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -26,5 +17,6 @@
     {% block footer %}{% include "components/_footer.html" %}{% endblock %}
   </main>
 </body>
+<script src="js/script.min.js"></script>
 {% block extra_js %}{% endblock %}
 </html>
